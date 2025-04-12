@@ -1,3 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    
+}
 header {
     background: whitesmoke;
+    color: rgb(42, 79, 182);
+    padding: 20px;
+    display: flex; /*deixa a pagina flexivel e quebravel para baixp*/
+    justify-content: space-around;
+
 }
+
+#introducao{
+    color: rgb(146, 77, 146);
+}
+
+
+
+header nav ul{
+    list-style: none;   /* Tira as bolinhas da lista nao ordenada */
+    text-transform: none;
+    padding: 0;
+    margin: 10px 0;
+    display: flex;
+    gap: 20px;
+    
+}
+header nav ul a {
+    color: rgb(28, 75, 117);
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 5px 10px;
+
+}
+
+header nav ul li a:hover{
+    text-decoration: underline 3px rgb(99, 97, 89) /*efeito de linha de baixo do texto */
+}
+
+#conteudo{
+    display: grid; /*TRANSFORMA UM ELEMENTO EM UM CONTAINER DE GRADE, ORGANIZADO OS ELEMENTOS EM LINHAS E COLUNAS*/
+    grid-template-columns: 1fr 200px; /*DIVIDE EM UMA COLUNA  COM 1 FRAÇÃO DE LARGURA E 200px de ALTURA*/
+    gap:20px; /*ESPAÇAMENTO ENTRE OS ELEMENTOS DE 20PX*/
+    
+}
+main{
+    display: flex;/*DEIXA O CONTEUDO UM DO LADO DO OUTRO FLEXIVEL*/
+    flex-wrap: wrap; /*PERMITE QUE OS ITEMS FLEXIVEIS QUEBREM DE LINHA SE NÃO HOUVER ESPAÇO NA MESMA LINHA */
+    justify-content: center; /*JUSTIFICA O CONTEUDO AO CENTRO*/
+
+}
+
+
